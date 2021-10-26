@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 300px;
+            border: 1px solid #303030;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            flex: 1;
+            background: brown;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .o1{
+            order: 1;
+        }
+
+        .o2{
+            order: 2;
+        }
+
+        .o3{
+            order: 3;
+        }
+
+        .o4{
+            order: 4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Row</h1>
+    <p>order: 0</p>
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">4n</div>
+        <div class="item">4m</div>
+    </div>
+
+    <p>order: diferentes</p>
+    <div class="flex-container">
+        <div class="item o1">1</div>
+        <div class="item o2">2</div>
+        <div class="item o3">3</div>
+        <div class="item o4">4</div>
+        <div class="item o1">4n</div>
+        <div class="item ">4m</div>
+    </div>
+
+    <h1>Column</h1>
+    <p>order: 0</p>
+    <div class="flex-container column ">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">4n</div>
+        <div class="item">4m</div>
+    </div>
+
+    <p>order: diferentes</p>
+    <div class="flex-container column ">
+        <div class="item o1">1</div>
+        <div class="item o2">2</div>
+        <div class="item o3">3</div>
+        <div class="item o4">4</div>
+        <div class="item o1">4n</div>
+        <div class="item ">4m</div>
+    </div>
+
+</body>
+
+</html>
