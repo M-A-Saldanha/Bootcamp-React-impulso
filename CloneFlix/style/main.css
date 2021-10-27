@@ -77,6 +77,8 @@ header nav a:hover{
     margin-right: 15px;
     padding: 15px 30px;
 
+    text-decoration: none;
+
     cursor: pointer;
     transition: .3s ease all;
 }
