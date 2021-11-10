@@ -6,7 +6,7 @@ const theme = {
         success: '#2ecc71',
     },
     fonts: {
-        fontFamily: 'Roboto, sans-serif',
+        regular: 'Roboto, sans-serif',
     },
 };
 
